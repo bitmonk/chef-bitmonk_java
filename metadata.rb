@@ -1,0 +1,7 @@
+name             'bitmonk_java'
+maintainer       'Justin Alan Ryan'
+maintainer_email 'bitmonk@icloud.com'
+license          'Apache 2.0'
+description      'Installs/Configures bitmonk_java'
+long_description 'Installs/Configures bitmonk_java'
+version          '0.1.0'
