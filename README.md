@@ -1,10 +1,14 @@
 # bitmonk_java-cookbook
 
-TODO: Enter the cookbook description here.
+This is an example wrapper cookbook for java and tomcat.
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+Technically, anything with OpenJDK 8 and Tomcat 8 packages, currently tested against:
+
+  * Ubuntu 15.04
+  * Debian 8.2
+  * CentOS 7.1
 
 ## Attributes
 
@@ -16,10 +20,16 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['bitmonk_java']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['java']['jdk_version']</tt></td>
+    <td>Integer</td>
+    <td>Major Java version number</td>
+    <td><tt>8</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['tomcat']['base_version']</tt></td>
+    <td>Integer</td>
+    <td>Major Tomcat version number</td>
+    <td><tt>8</tt></td>
   </tr>
 </table>
 
