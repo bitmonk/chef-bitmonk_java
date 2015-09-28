@@ -16,3 +16,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+case node['platform']
+when 'ubuntu'
+  include_recipe 'apt'
+  apt_repository 'openjdk-r-ppa' do
+    uri 'ppa:openjdk-r'
+    distribution node['lsb']['codename']
+  end
+when 'debian'
+  include_recipe 'debian::backports'
+end
+
+include_recipe 'java'
+include_recipe 'tomcat'
+

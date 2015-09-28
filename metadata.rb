@@ -5,3 +5,8 @@ license          'Apache 2.0'
 description      'Installs/Configures bitmonk_java'
 long_description 'Installs/Configures bitmonk_java'
 version          '0.1.0'
+
+depends 'apt'
+depends 'debian'
+depends 'java'
+depends 'tomcat'
